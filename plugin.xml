@@ -9,6 +9,8 @@
 	<keywords></keywords>
 	<author>Janderson Costa</author>
 
+	<repo>https://github.com/jandersonfcosta/custom-connectivity.git</repo>
+
 	<js-module src="www/Connectivity.js" name="Connectivity">
 		<clobbers target="Connectivity" />
 	</js-module>
