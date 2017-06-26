@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<plugin
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="custom-connectivity"
+	version="0.0.0">
+	<name>Connectivity</name>
+	<description>Status da conexão</description>
+	<license></license>
+	<keywords></keywords>
+	<author>Janderson Costa</author>
+
+	<js-module src="www/Connectivity.js" name="Connectivity">
+		<clobbers target="Connectivity" />
+	</js-module>
+
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Connectivity">
+				<param name="android-package" value="custom.connectivity.Connectivity" />
+			</feature>
+		</config-file>
+		<source-file src="src/android/Connectivity.java" target-dir="src/custom/connectivity" />
+	</platform>
+</plugin>
